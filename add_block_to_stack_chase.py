@@ -85,4 +85,4 @@ class AddBlockToStackChaseCommand(sublime_plugin.TextCommand):
         while left_pad_length < minimum_left_pad_length:
             left_pad_length += tab_size
 
-        return '{0:0' + str(left_pad_length) + 'd}'
+        return '{0:0' + str(left_pad_length - 1) + 'd}'
